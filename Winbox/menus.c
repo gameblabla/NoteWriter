@@ -1,5 +1,6 @@
 #include <os.h>
 #include <SDL/SDL.h>
+#include <Winbox.h>
 
 #include "menus.h"
 #include "structures.h"

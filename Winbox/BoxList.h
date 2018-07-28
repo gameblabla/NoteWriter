@@ -1,6 +1,7 @@
 #ifndef BOXLIST_H
 #define BOXLIST_H
 
+#include <Winbox.h>
 #include "menus.h"
 
 Widget *wBoxList(wMENU *m, int dItems, int maxSelected);

@@ -18,6 +18,7 @@ local.properties
 *.o
 *.tns
 *.elf
+*.zip
 
 # External tool builders
 .externalToolBuilders/

@@ -1,5 +1,6 @@
 #include <os.h>
 #include <SDL/SDL.h>
+#include <Winbox.h>
 #include "structures.h"
 #include "keys.h"
 #include "general.h"

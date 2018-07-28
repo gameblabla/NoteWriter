@@ -1,6 +1,10 @@
 #ifndef WINBOX_H
 #define WINBOX_H
 
+
+#define min(a, b) ((a) < (b)) ? (a) : (b)
+#define max(a,b) (((a)>(b))?(a):(b))
+
 #include "structures.h"
 #include "widgets.h"
 #include "theme.h"
