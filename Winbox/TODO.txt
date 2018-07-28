@@ -1,0 +1,5 @@
+Reste à faire :
+
+
+
+- Mettre dans la doc : On ne peut utiliser wSetBackground pour créer un background. Seulement des pointeurs !!!

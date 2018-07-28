@@ -1,8 +1,27 @@
 #include <SDL/SDL.h>
-#include <Winbox/Winbox.h>
+#include "theme.h"
+#include "structures.h"
+#include "widgets.h"
 
 
-wTHEME *NoteWriterClassicTheme()
+extern wTHEME *Theme;
+
+void wInitTheme(wTHEME *theme)
+{
+	if (!theme) theme = wDefaultTheme();
+	if (theme != Theme) wCloseTheme(Theme);
+	Theme = theme;
+}
+
+
+
+void SetColorKey(SDL_Surface *s)
+{
+	SDL_SetColorKey(s, SDL_SRCCOLORKEY, SDL_MapRGB(s->format, 255, 0, 0));
+}
+
+
+wTHEME *wDefaultTheme()
 {
 	wTHEME *t = malloc(sizeof(wTHEME));
 	if (!t) return NULL;
@@ -10,12 +29,12 @@ wTHEME *NoteWriterClassicTheme()
 	t->color1 = SDL_MapRGB(fmt, 239,251,247);
 	t->color2 = SDL_MapRGB(fmt, 24,48,90);
 	t->color3 = SDL_MapRGB(fmt, 66,113,206);
-	t->color4 = SDL_MapRGB(fmt, 33,25,60);
+	t->color4 = SDL_MapRGB(fmt, 33,16,33);
 	t->defbg = wBackgroundColor(SDL_MapRGB(fmt,99,162,181), SDL_MapRGB(fmt,214,235,235), BACKG_TRICOLOR);
 	t->font_index = NSDL_FONT_THIN;
-	t->font = nSDL_LoadFont(t->font_index, 33, 25, 60);
+	t->font = nSDL_LoadFont(t->font_index, 33, 16, 33);
 	
-	t->button_bg = wBackgroundColor(SDL_MapRGB(fmt, 222,222,222), SDL_MapRGB(fmt, 40,52,132), BACKG_HGRAD);
+	t->button_bg = wBackgroundColor(SDL_MapRGB(fmt, 222,222,222), SDL_MapRGB(fmt, 16,52,132), BACKG_HGRAD);
 	t->button_bg_selected = wBackgroundColor(SDL_MapRGB(fmt, 0,24,33), SDL_MapRGB(fmt, 74,77,74), BACKG_HGRAD);
 	t->button_font = nSDL_LoadFont(NSDL_FONT_VGA, 0, 0, 0);
 	t->button_font_selected = nSDL_LoadFont(NSDL_FONT_VGA, 255, 255, 255);
@@ -112,8 +131,8 @@ wTHEME *NoteWriterClassicTheme()
 	t->tab_delete = nSDL_LoadImage(image_tab_delete);	
 	SetColorKey(t->tab_delete);
 	
-	t->request_c1 = SDL_MapRGB(fmt, 239,243,247);
-	t->request_c2 = SDL_MapRGB(fmt, 220,227,255);
+	t->request_c1 = SDL_MapRGB(fmt, 231,227,255);
+	t->request_c2 = SDL_MapRGB(fmt, 239,239,239);
 	t->request_c3 = SDL_MapRGB(fmt, 49,65,115);
 	t->request_f1 = nSDL_LoadFont(NSDL_FONT_THIN, 0, 8, 41);
 	t->request_f2 = nSDL_LoadFont(NSDL_FONT_TINYTYPE, 107, 146, 189);
@@ -207,4 +226,45 @@ wTHEME *NoteWriterClassicTheme()
 	t->dialog_bg2 = wBackgroundColor(SDL_MapRGB(fmt, 222,222,222), SDL_MapRGB(fmt, 148,73,82), BACKG_HGRAD);
 	
 	return t;
+}
+
+void wCloseTheme()
+{
+	wTHEME *t = Theme;
+	if (!t) return;
+	free(t->defbg);
+	if (t->font) nSDL_FreeFont(t->font);
+	
+	free(t->button_bg);
+	free(t->button_bg_selected);
+	nSDL_FreeFont(t->button_font);
+	nSDL_FreeFont(t->button_font_selected);
+	
+	SDL_FreeSurface(t->img_check_0);
+	SDL_FreeSurface(t->img_check_1);
+	SDL_FreeSurface(t->img_scrollb_up);
+	SDL_FreeSurface(t->img_scrollb_down);
+	SDL_FreeSurface(t->img_scrollb_right);
+	SDL_FreeSurface(t->img_scrollb_left);
+	
+	SDL_FreeSurface(t->tab_delete);
+	nSDL_FreeFont(t->tab_f1);
+	nSDL_FreeFont(t->tab_f2);
+	
+	nSDL_FreeFont(t->request_f1);
+	nSDL_FreeFont(t->request_f2);
+	SDL_FreeSurface(t->request_right);
+	SDL_FreeSurface(t->request_left);
+	
+	SDL_FreeSurface(t->menus_right);
+	nSDL_FreeFont(t->menus_title_font);
+	nSDL_FreeFont(t->menus_font1);
+	nSDL_FreeFont(t->menus_font2);
+	
+	SDL_FreeSurface(t->pbar_cursor);
+	SDL_FreeSurface(t->pbar_cursor_v);
+	
+	SDL_FreeSurface(t->window_icon);
+	free(t->window_title_bg);
+	nSDL_FreeFont(t->window_title_font);
 }

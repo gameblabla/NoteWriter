@@ -1,5 +1,5 @@
-#include <SDL\SDL.h>
-#include <Winbox\Winbox.h>
+#include <SDL/SDL.h>
+#include <Winbox/Winbox.h>
 
 
 wTHEME *NoteWriterDarkTheme()

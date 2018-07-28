@@ -1,0 +1,26 @@
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="5">
+            <File firstVisibleLine="45" xOffset="0" scrollWidth="1" startPos="2471" endPos="2486" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\BasicLayout.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2160" startPos="179" endPos="179" selMode="0" lang="C++" encoding="-1" filename="D:\Projets nSpire\Winbox\BasicLayout.h" />
+            <File firstVisibleLine="243" xOffset="0" scrollWidth="992" startPos="477" endPos="477" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\TabLayout.c" />
+            <File firstVisibleLine="74" xOffset="0" scrollWidth="992" startPos="2191" endPos="2191" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\List.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="992" startPos="192" endPos="192" selMode="0" lang="C++" encoding="-1" filename="D:\Projets nSpire\Winbox\List.h" />
+            <File firstVisibleLine="100" xOffset="0" scrollWidth="992" startPos="3618" endPos="3618" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\Map.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="992" startPos="550" endPos="550" selMode="0" lang="C++" encoding="-1" filename="D:\Projets nSpire\Winbox\Map.h" />
+            <File firstVisibleLine="116" xOffset="0" scrollWidth="992" startPos="3933" endPos="3933" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\BoxList.c" />
+        </mainView>
+        <subView activeIndex="9">
+            <File firstVisibleLine="33" xOffset="0" scrollWidth="1296" startPos="1046" endPos="1046" selMode="0" lang="C++" encoding="-1" filename="D:\Projets nSpire\Winbox\structures.h" />
+            <File firstVisibleLine="134" xOffset="0" scrollWidth="1296" startPos="6972" endPos="6972" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\theme.c" />
+            <File firstVisibleLine="12" xOffset="0" scrollWidth="1296" startPos="1763" endPos="1763" selMode="0" lang="C++" encoding="-1" filename="D:\Projets nSpire\Winbox\theme.h" />
+            <File firstVisibleLine="35" xOffset="0" scrollWidth="1296" startPos="1619" endPos="1619" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\test.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1832" startPos="229" endPos="229" selMode="0" lang="Makefile" encoding="-1" filename="D:\Projets nSpire\Winbox\Makefile" />
+            <File firstVisibleLine="125" xOffset="0" scrollWidth="1296" startPos="3104" endPos="3359" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\widgets.c" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1296" startPos="721" endPos="735" selMode="0" lang="C++" encoding="-1" filename="D:\Projets nSpire\Winbox\widgets.h" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1296" startPos="0" endPos="0" selMode="0" lang="C++" encoding="-1" filename="D:\Projets nSpire\Winbox\colors.h" />
+            <File firstVisibleLine="14" xOffset="0" scrollWidth="1296" startPos="1356" endPos="1356" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\scrollbar.c" />
+            <File firstVisibleLine="97" xOffset="0" scrollWidth="1296" startPos="3411" endPos="3411" selMode="0" lang="C" encoding="-1" filename="D:\Projets nSpire\Winbox\colors.c" />
+        </subView>
+    </Session>
+</NotepadPlus>

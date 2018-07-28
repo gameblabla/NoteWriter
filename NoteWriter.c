@@ -1,5 +1,5 @@
 #include <os.h>
-#include <SDL\SDL.h>
+#include <SDL/SDL.h>
 #include <Winbox.h>
 #include <SDL/SDL_rotozoom.h>
 
